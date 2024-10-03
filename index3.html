@@ -17,8 +17,24 @@
                 <input type="text" name="pass">
                 <br>
                 <p>Какой диск вы хотите получить?</p>
-                <input type="radio" name="t_disk" value="cd"> CD<br>
-                <input type="radio" name="t_disk" value="dvd"> DVD<br>
+                <label><input type="radio" name="t_disk" value="cd"> CD</label><br>
+                <label><input type="radio" name="t_disk" value="dvd"> DVD</label><br>
+                <br>
+                <p>Какие обучающие курсы вы хотите видеть на диске?</p>
+                <label><input type="checkbox" name="cources" value="adb_photoshop">Курсы по Adobe Photoshop</label><br>
+                <label><input type="checkbox" name="cources" value="adb_dreamweaver">Курсы по Adobe Dreamweaver</label><br>
+                <label><input type="checkbox" name="cources" value="php">Курсы по PHP</label><br>
+                <br>
+                <p>Выберете способ доставки:</p>
+                <select name="delivery">
+                    <option value="human">Курьером</option>
+                    <option value="pochta">По Почте России</option>
+                </select>
+                <br>
+                <p>Введите адрес для доставки:</p>
+                <texatrea name="adress"></textarea>
+                <button type="submit">Сделать заказ</button>
+                <button type="reset">Отмена</button>
             </fieldset>
         </form>
     </body>
