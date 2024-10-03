@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Практическая</title>
+    </head>
+
+    <body>
+        <h1>Регистрация в школу</h1>
+        <form>
+            <!-- PERSONAL INFO -->
+            <fieldset>
+                <legend>Личные данные</legend>
+                <label>Имя: <input type="text" name="name" required></label>
+                <br><br>
+                <label>Фамилия: <input type="text" name="secondname" required></label>
+                <br><br>
+                <label>Дата рождения: <input type="date" name="date" required></label>
+            </fieldset>
+            <!-- YEAR OF EDU -->
+            <fieldset>
+                <legend>Школьные классы</legend>
+                <label><input type="radio" name="class" value="1"> 1 класс</label>
+                <label><input type="radio" name="class" value="2"> 2 класс</label>
+                <label><input type="radio" name="class" value="3"> 3 класс</label>
+                <label><input type="radio" name="class" value="4"> 4 класс</label>
+                <label><input type="radio" name="class" value="5"> 5 класс</label>
+                <label><input type="radio" name="class" value="6"> 6 класс</label>
+                <label><input type="radio" name="class" value="7"> 7 класс</label>
+                <label><input type="radio" name="class" value="8"> 8 класс</label>
+                <label><input type="radio" name="class" value="9"> 9 класс</label>
+                <label><input type="radio" name="class" value="10"> 10 класс</label>
+                <label><input type="radio" name="class" value="11"> 11 класс</label>
+            </fieldset>
+            <!-- ADD INFO -->
+            <fieldset>
+                <legend>Дополнительная информация</legend>
+                <label>Электронная почта: <input type="email" name="mail" required></label>
+                <br><br>
+                <label>Телефон: <input type="tel" name="phone" required></label>
+                <br><br>
+                <label>Адрес: <input type="text" name="adress" required></label>
+                <br><br>
+                <label>Интересы: 
+                    <select name="interests" multiple>
+                        <option value="select" disabled>Выбрать</option>
+                        <option value="sport">Спорт</option>
+                        <option value="music">Музыка</option>
+                        <option value="art">Искусство</option>
+                    </select>
+                </label>
+                <br><br>
+                <label>Комментарий: <textarea></textarea></label>
+            </fieldset>
+            <br><br> 
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset">Отменить</button>
+        </form>
+    </body>
+
+</html>

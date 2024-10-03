@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Практика</title>
+        <style>
+            body {
+                background-color: #402E7A;
+                color: #3DC2EC;
+            }
+            fieldset {
+                border-color: #4B70F5;
+            }
+            input {
+                background-color: #4C3BCF;
+                border: none;
+                border-radius: 5px;
+            }
+            textarea {
+                background-color: #4C3BCF;
+                border: none;
+                border-radius: 5px;
+            }
+            select {
+                background-color: #4C3BCF;
+                border: none;
+                color: #cccccc;
+                border-radius: 5px;
+            }
+            button {
+                background-color: #4C3BCF;
+                color: #CCC;
+                border: none;
+                border-radius: 2px;
+            }
+            button:hover {
+                background-color: #3722d3;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Информация о нас</h2>
+        <form>
+            <!-- CONTACT INFO -->
+            <fieldset>
+                <legend>Контактная информация</legend><br>
+                <!-- ИМЯ -->
+                <label>
+                    Имя * <input type="text" name="name" required>
+                </label>
+                <br><br>
+                <!-- PHONE NUMBER -->
+                <label>
+                    Телефон <input type="tel" name="number">
+                </label>
+                <br><br>
+                <!-- EMAIL -->
+                <label>
+                    Email * <input type="email" name="mail" required>
+                </label>
+            </fieldset>
+            <!-- PERSONAL INFO -->
+            <fieldset>
+                <legend>Персональная информация</legend><br>
+                <!-- AGE -->
+                <label>
+                    Возраст * <input type="number" name="age">
+                </label>
+                <br><br>
+                <!-- GENDER -->
+                Пол 
+                <select name="gender">
+                    <option value="none" selected disabled>ВЫБЕРЕТЕ ПОЛ</option>
+                    <option value="male">Мужчина</option>
+                    <option value="female">Женщина</option>
+                </select>
+                <br><br>
+                <!-- INTERISTS -->
+                <label>
+                    Перечислите интересы <textarea name="interests"></textarea>
+                </label>
+            </fieldset>
+            <!-- EVENT TIME -->
+            <fieldset>
+                <legend>Время проведения</legend>
+                <input type="radio" name="time" value="morning">Утро 
+                <input type="radio" name="time" value="afternoon">День 
+                <input type="radio" name="time" value="evening">Вечер 
+            </fieldset>
+            <br>
+            <!-- BUTTONS -->
+            <button type="submit">Отправить данные</button>
+            <button type="reset">Очистить данные</button>
+        </form>
+    </body>
+
+</html>
